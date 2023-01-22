@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #09090a;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 48px;
+
+  position: fixed;
+  width: 100%;
+  background-color: #09090a;
+}
+
+button {
+padding: 10px 10px;
+border-radius: 8px;
+border: 1px solid #B899FF;
+background: linear-gradient(90deg, #4C1D95 0%, #6D28D9 12.5%, #8B5CF6 25%, #AC89FB 37.5%, #B899FF 48.96%, #AC89FB 61.46%, #8B5CF6 74.48%, #6D28D9 86.98%, #4C1D95 100%);
+color: white;
+
+display: flex;
+align-items: center;
+gap: 12px;
+
+font-family: 'times new roman', cursive;
+font-size: 20px;
+}
+
+#form-habits {
+  display: flex;
+
+  padding: 182px 48px 48px;
+  width: fit-content;
+}
+
+.habits {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.habit {
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 8px;
+
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+
+  color: #a1a1aa;
+
+  text-align: center;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 64px;
+  height: 64px;
+
+  border: 2px solid #27272a;
+  border-radius: 8px;
+
+  background: #18181b;
+}
+ 
+
+input:checked {
+  background: #8b5cf6;
+  border: 2px solid #a78bfa;
+}
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
+}
+
+@media (max-width: 708px) {
+
+  header {
+    width:auto;
+    align-items: center;
+    flex-direction: column;  
+    
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+  
+    position: fixed;
+    width: 100%;
+    background-color: #09090a;
+  }
+  
+  button {
+    padding: 5px 24px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, #4C1D95 0%, #6D28D9 12.5%, #8B5CF6 25%, #AC89FB 37.5%, #B899FF 48.96%, #AC89FB 61.46%, #8B5CF6 74.48%, #6D28D9 86.98%, #4C1D95 100%);
+    color: white;
+  
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  
+    font-family: 'Alex Brush', cursive;
+    font-size: 20px;
+  }
+  
+  header img {
+    padding-top: 10px;
+    right: 0px;
+    padding-bottom: 10px;
+    margin: auto;
+
+  }
+  #form-habits {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 0px;
+    width: fit-content;
+    margin: 0 auto;
+
+  }
+  
+  .habits {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: initial;
+    gap:0px;
+  }
+  
+  #run {  
+    margin-left: 9px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 60px;  
+}
+
+  #water {
+    margin-left: -5px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 60px;  
+}
+
+  #food {
+    margin-left: -4px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 60px;  
+}
+
+  #journal {
+    margin-left: -8px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 60px;  
+}
+
+  #takePills {
+    margin-left: -4px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 60px;  
+}
+
+.days {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+  }
+  
+  .day {
+    flex-direction: initial;
+    gap: 10px;
+    text-align: center;
+  
+  }
+  
+  .day div {
+    margin-top: 7px;
+    font-family: "Roboto Mono";
+    font-size: 10px;
+    line-height: 125%;
+  
+    color: #afacac;
+  
+  }
+  
+  input {
+    appearance: none;
+    -webkit-appearance: none;
+  
+    width: 35px;
+    height: 35px;
+  
+    border: 3px solid #363638;
+    border-radius: 8px;
+  
+    background: #18181B;
+  }
+  
+  input:checked {
+    background: #8B5CF6;
+    border: 3px solid #A78BFA;
+  }
+  
+  
+  
+  }

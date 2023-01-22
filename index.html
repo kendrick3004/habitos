@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap"rel="stylesheet"/>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habits</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./code/svg/logo.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./code/svg/logo.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/./code/svg/logo.svg">
+    <link rel="stylesheet" href="./code/css/cookies.css" />
+    <link rel="stylesheet" href="./code/css/style.css" />
+  </head>
+  <body>
+    <div id="cookiePopup" class="hide" style="z-index: 34;">
+      <img src="./code/svg/cookies.svg">
+      <p>
+        Usamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos serviços.<br>
+        Ao utilizar nossos serviços, você concorda com tal monitoramento. <br>
+        Você pode a qualquer momento excluir os cookies armazenados no seu computador através das configurações do seu navegador web.<br>
+        <a href="#">  Cookie Policy & Privacy</a>
+      </p>
+      <button id="acceptCookie">Concordo</button>
+    </div>
+    <div class="container">
+    <header>
+      <img src="./code/svg/logo.svg" alt="Logomarca do aplicativo Habits" />
+
+      <button>
+        <img src="./code/svg/Plus.svg" alt="ícone sinal de mais roxo" />
+        <p>
+          Registrar o meu dia
+        </p>
+      </button>
+    </header>
+
+    <form id="form-habits">
+      <div class="habits">
+        <div class="habit" id="run" data-name="run">🏃🏽‍♂️</div>
+        <div class="habit" id="water" data-name="water">💧</div>
+        <div class="habit" id="food" data-name="food">🍎</div>
+        <div class="habit" id="journal" data-name=journal">📕</div>
+        <div class="habit" id="takePills" data-name="takePills">💊</div>
+      </div>
+
+      <div class="days"></div>
+      
+
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./code/js/script.js"></script>
+    <script src="./code/js/cookies.js"></script>
+
+  </body>
+</html>
